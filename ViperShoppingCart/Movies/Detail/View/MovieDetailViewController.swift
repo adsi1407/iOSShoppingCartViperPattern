@@ -16,10 +16,13 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var movieOverviewLabel: UILabel!
     
     private var movie: MovieEntity?
+    private var movieDetailPresenter: MovieDetailPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setViews()
+        
+        movieDetailPresenter = MovieDetailPresenter()
     }
     
     func setMovie(movie: MovieEntity) {
@@ -38,5 +41,8 @@ class MovieDetailViewController: UIViewController {
     }
     
     @IBAction func addToCart(_ sender: UIButton) {
+        
+        guard let unwrappedMovie = movie else { return }
+        movieDetailPresenter?.navigateToCart(movie: unwrappedMovie)
     }
 }
