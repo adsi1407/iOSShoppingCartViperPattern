@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79E6EB94269F4AAF008D0AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EB93269F4AAF008D0AD8 /* AppDelegate.swift */; };
+		79E6EB96269F4AAF008D0AD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EB95269F4AAF008D0AD8 /* SceneDelegate.swift */; };
+		79E6EB9D269F4AC5008D0AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E6EB9C269F4AC5008D0AD8 /* Assets.xcassets */; };
+		79E6EBA0269F4AC5008D0AD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79E6EB9E269F4AC5008D0AD8 /* LaunchScreen.storyboard */; };
+		79E6EBAB269F4AC8008D0AD8 /* ViperShoppingCartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EBAA269F4AC8008D0AD8 /* ViperShoppingCartTests.swift */; };
+		79E6EBB6269F4AC9008D0AD8 /* ViperShoppingCartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EBB5269F4AC9008D0AD8 /* ViperShoppingCartUITests.swift */; };
+		79E6EBD4269FCDBA008D0AD8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EBD3269FCDBA008D0AD8 /* TabBarController.swift */; };
+		79E6EBDB269FD068008D0AD8 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EBDA269FD068008D0AD8 /* MoviesViewController.swift */; };
+		79E6EBE9269FD132008D0AD8 /* MoviesPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EBE8269FD132008D0AD8 /* MoviesPresenterDelegate.swift */; };
+		79E6EBEE269FD1C8008D0AD8 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EBED269FD1C8008D0AD8 /* CartViewController.swift */; };
+		79E6EBF7269FD637008D0AD8 /* CartPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EBF6269FD637008D0AD8 /* CartPresenterDelegate.swift */; };
+		7E239A1E5599B3711341D8FB /* Pods_ViperShoppingCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597135B65123ACB00EFCA1D9 /* Pods_ViperShoppingCart.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79E6EBA7269F4AC7008D0AD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E6EB88269F4AAF008D0AD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E6EB8F269F4AAF008D0AD8;
+			remoteInfo = ViperShoppingCart;
+		};
+		79E6EBB2269F4AC9008D0AD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E6EB88269F4AAF008D0AD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E6EB8F269F4AAF008D0AD8;
+			remoteInfo = ViperShoppingCart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		597135B65123ACB00EFCA1D9 /* Pods_ViperShoppingCart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperShoppingCart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7323FCD6652C7EAAA5FA416D /* Pods-ViperShoppingCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperShoppingCart.release.xcconfig"; path = "Target Support Files/Pods-ViperShoppingCart/Pods-ViperShoppingCart.release.xcconfig"; sourceTree = "<group>"; };
+		79E6EB90269F4AAF008D0AD8 /* ViperShoppingCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperShoppingCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E6EB93269F4AAF008D0AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79E6EB95269F4AAF008D0AD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		79E6EB9C269F4AC5008D0AD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79E6EB9F269F4AC5008D0AD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79E6EBA1269F4AC5008D0AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E6EBA6269F4AC7008D0AD8 /* ViperShoppingCartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperShoppingCartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E6EBAA269F4AC8008D0AD8 /* ViperShoppingCartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperShoppingCartTests.swift; sourceTree = "<group>"; };
+		79E6EBAC269F4AC8008D0AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E6EBB1269F4AC9008D0AD8 /* ViperShoppingCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperShoppingCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E6EBB5269F4AC9008D0AD8 /* ViperShoppingCartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperShoppingCartUITests.swift; sourceTree = "<group>"; };
+		79E6EBB7269F4AC9008D0AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E6EBD3269FCDBA008D0AD8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		79E6EBDA269FD068008D0AD8 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		79E6EBE8269FD132008D0AD8 /* MoviesPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenterDelegate.swift; sourceTree = "<group>"; };
+		79E6EBED269FD1C8008D0AD8 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		79E6EBF6269FD637008D0AD8 /* CartPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartPresenterDelegate.swift; sourceTree = "<group>"; };
+		E15FA79F0C5BBAFCF00B65A1 /* Pods-ViperShoppingCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperShoppingCart.debug.xcconfig"; path = "Target Support Files/Pods-ViperShoppingCart/Pods-ViperShoppingCart.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79E6EB8D269F4AAF008D0AD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E239A1E5599B3711341D8FB /* Pods_ViperShoppingCart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E6EBA3269F4AC7008D0AD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E6EBAE269F4AC9008D0AD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33C6DB304A8B95BEDDC415B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				597135B65123ACB00EFCA1D9 /* Pods_ViperShoppingCart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79E6EB87269F4AAF008D0AD8 = {
+			isa = PBXGroup;
+			children = (
+				79E6EB92269F4AAF008D0AD8 /* ViperShoppingCart */,
+				79E6EBA9269F4AC7008D0AD8 /* ViperShoppingCartTests */,
+				79E6EBB4269F4AC9008D0AD8 /* ViperShoppingCartUITests */,
+				79E6EB91269F4AAF008D0AD8 /* Products */,
+				C55AA479281AA9B53F08A13B /* Pods */,
+				33C6DB304A8B95BEDDC415B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79E6EB91269F4AAF008D0AD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79E6EB90269F4AAF008D0AD8 /* ViperShoppingCart.app */,
+				79E6EBA6269F4AC7008D0AD8 /* ViperShoppingCartTests.xctest */,
+				79E6EBB1269F4AC9008D0AD8 /* ViperShoppingCartUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79E6EB92269F4AAF008D0AD8 /* ViperShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				79E6EBD9269FD02B008D0AD8 /* Cart */,
+				79E6EBD8269FD022008D0AD8 /* Movies */,
+				79E6EB93269F4AAF008D0AD8 /* AppDelegate.swift */,
+				79E6EB95269F4AAF008D0AD8 /* SceneDelegate.swift */,
+				79E6EB9C269F4AC5008D0AD8 /* Assets.xcassets */,
+				79E6EB9E269F4AC5008D0AD8 /* LaunchScreen.storyboard */,
+				79E6EBA1269F4AC5008D0AD8 /* Info.plist */,
+				79E6EBD3269FCDBA008D0AD8 /* TabBarController.swift */,
+			);
+			path = ViperShoppingCart;
+			sourceTree = "<group>";
+		};
+		79E6EBA9269F4AC7008D0AD8 /* ViperShoppingCartTests */ = {
+			isa = PBXGroup;
+			children = (
+				79E6EBAA269F4AC8008D0AD8 /* ViperShoppingCartTests.swift */,
+				79E6EBAC269F4AC8008D0AD8 /* Info.plist */,
+			);
+			path = ViperShoppingCartTests;
+			sourceTree = "<group>";
+		};
+		79E6EBB4269F4AC9008D0AD8 /* ViperShoppingCartUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79E6EBB5269F4AC9008D0AD8 /* ViperShoppingCartUITests.swift */,
+				79E6EBB7269F4AC9008D0AD8 /* Info.plist */,
+			);
+			path = ViperShoppingCartUITests;
+			sourceTree = "<group>";
+		};
+		79E6EBD8269FD022008D0AD8 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				79E6EBE4269FD0F3008D0AD8 /* ViperProtocols */,
+				79E6EBDA269FD068008D0AD8 /* MoviesViewController.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		79E6EBD9269FD02B008D0AD8 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				79E6EBF5269FD61C008D0AD8 /* ViperProtocols */,
+				79E6EBED269FD1C8008D0AD8 /* CartViewController.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		79E6EBE4269FD0F3008D0AD8 /* ViperProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				79E6EBE8269FD132008D0AD8 /* MoviesPresenterDelegate.swift */,
+			);
+			path = ViperProtocols;
+			sourceTree = "<group>";
+		};
+		79E6EBF5269FD61C008D0AD8 /* ViperProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				79E6EBF6269FD637008D0AD8 /* CartPresenterDelegate.swift */,
+			);
+			path = ViperProtocols;
+			sourceTree = "<group>";
+		};
+		C55AA479281AA9B53F08A13B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E15FA79F0C5BBAFCF00B65A1 /* Pods-ViperShoppingCart.debug.xcconfig */,
+				7323FCD6652C7EAAA5FA416D /* Pods-ViperShoppingCart.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79E6EB8F269F4AAF008D0AD8 /* ViperShoppingCart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E6EBBA269F4AC9008D0AD8 /* Build configuration list for PBXNativeTarget "ViperShoppingCart" */;
+			buildPhases = (
+				F841798C3E79B610757C23FD /* [CP] Check Pods Manifest.lock */,
+				79E6EB8C269F4AAF008D0AD8 /* Sources */,
+				79E6EB8D269F4AAF008D0AD8 /* Frameworks */,
+				79E6EB8E269F4AAF008D0AD8 /* Resources */,
+				CB7B2594B165352EA7E93051 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViperShoppingCart;
+			productName = ViperShoppingCart;
+			productReference = 79E6EB90269F4AAF008D0AD8 /* ViperShoppingCart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79E6EBA5269F4AC7008D0AD8 /* ViperShoppingCartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E6EBBD269F4AC9008D0AD8 /* Build configuration list for PBXNativeTarget "ViperShoppingCartTests" */;
+			buildPhases = (
+				79E6EBA2269F4AC7008D0AD8 /* Sources */,
+				79E6EBA3269F4AC7008D0AD8 /* Frameworks */,
+				79E6EBA4269F4AC7008D0AD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E6EBA8269F4AC7008D0AD8 /* PBXTargetDependency */,
+			);
+			name = ViperShoppingCartTests;
+			productName = ViperShoppingCartTests;
+			productReference = 79E6EBA6269F4AC7008D0AD8 /* ViperShoppingCartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79E6EBB0269F4AC9008D0AD8 /* ViperShoppingCartUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E6EBC0269F4AC9008D0AD8 /* Build configuration list for PBXNativeTarget "ViperShoppingCartUITests" */;
+			buildPhases = (
+				79E6EBAD269F4AC9008D0AD8 /* Sources */,
+				79E6EBAE269F4AC9008D0AD8 /* Frameworks */,
+				79E6EBAF269F4AC9008D0AD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E6EBB3269F4AC9008D0AD8 /* PBXTargetDependency */,
+			);
+			name = ViperShoppingCartUITests;
+			productName = ViperShoppingCartUITests;
+			productReference = 79E6EBB1269F4AC9008D0AD8 /* ViperShoppingCartUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79E6EB88269F4AAF008D0AD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					79E6EB8F269F4AAF008D0AD8 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					79E6EBA5269F4AC7008D0AD8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 79E6EB8F269F4AAF008D0AD8;
+					};
+					79E6EBB0269F4AC9008D0AD8 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 79E6EB8F269F4AAF008D0AD8;
+					};
+				};
+			};
+			buildConfigurationList = 79E6EB8B269F4AAF008D0AD8 /* Build configuration list for PBXProject "ViperShoppingCart" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79E6EB87269F4AAF008D0AD8;
+			productRefGroup = 79E6EB91269F4AAF008D0AD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79E6EB8F269F4AAF008D0AD8 /* ViperShoppingCart */,
+				79E6EBA5269F4AC7008D0AD8 /* ViperShoppingCartTests */,
+				79E6EBB0269F4AC9008D0AD8 /* ViperShoppingCartUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79E6EB8E269F4AAF008D0AD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E6EBA0269F4AC5008D0AD8 /* LaunchScreen.storyboard in Resources */,
+				79E6EB9D269F4AC5008D0AD8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E6EBA4269F4AC7008D0AD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E6EBAF269F4AC9008D0AD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CB7B2594B165352EA7E93051 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViperShoppingCart/Pods-ViperShoppingCart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViperShoppingCart/Pods-ViperShoppingCart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViperShoppingCart/Pods-ViperShoppingCart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F841798C3E79B610757C23FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViperShoppingCart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79E6EB8C269F4AAF008D0AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E6EBDB269FD068008D0AD8 /* MoviesViewController.swift in Sources */,
+				79E6EBEE269FD1C8008D0AD8 /* CartViewController.swift in Sources */,
+				79E6EBF7269FD637008D0AD8 /* CartPresenterDelegate.swift in Sources */,
+				79E6EBD4269FCDBA008D0AD8 /* TabBarController.swift in Sources */,
+				79E6EB94269F4AAF008D0AD8 /* AppDelegate.swift in Sources */,
+				79E6EBE9269FD132008D0AD8 /* MoviesPresenterDelegate.swift in Sources */,
+				79E6EB96269F4AAF008D0AD8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E6EBA2269F4AC7008D0AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E6EBAB269F4AC8008D0AD8 /* ViperShoppingCartTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E6EBAD269F4AC9008D0AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E6EBB6269F4AC9008D0AD8 /* ViperShoppingCartUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79E6EBA8269F4AC7008D0AD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E6EB8F269F4AAF008D0AD8 /* ViperShoppingCart */;
+			targetProxy = 79E6EBA7269F4AC7008D0AD8 /* PBXContainerItemProxy */;
+		};
+		79E6EBB3269F4AC9008D0AD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E6EB8F269F4AAF008D0AD8 /* ViperShoppingCart */;
+			targetProxy = 79E6EBB2269F4AC9008D0AD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79E6EB9E269F4AC5008D0AD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E6EB9F269F4AC5008D0AD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79E6EBB8269F4AC9008D0AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79E6EBB9269F4AC9008D0AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79E6EBBB269F4AC9008D0AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E15FA79F0C5BBAFCF00B65A1 /* Pods-ViperShoppingCart.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViperShoppingCart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.ViperShoppingCart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79E6EBBC269F4AC9008D0AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7323FCD6652C7EAAA5FA416D /* Pods-ViperShoppingCart.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViperShoppingCart/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.ViperShoppingCart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		79E6EBBE269F4AC9008D0AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViperShoppingCartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.ViperShoppingCartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperShoppingCart.app/ViperShoppingCart";
+			};
+			name = Debug;
+		};
+		79E6EBBF269F4AC9008D0AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViperShoppingCartTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.ViperShoppingCartTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperShoppingCart.app/ViperShoppingCart";
+			};
+			name = Release;
+		};
+		79E6EBC1269F4AC9008D0AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViperShoppingCartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.ViperShoppingCartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ViperShoppingCart;
+			};
+			name = Debug;
+		};
+		79E6EBC2269F4AC9008D0AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ViperShoppingCartUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.com.ceiba.ViperShoppingCartUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ViperShoppingCart;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79E6EB8B269F4AAF008D0AD8 /* Build configuration list for PBXProject "ViperShoppingCart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E6EBB8269F4AC9008D0AD8 /* Debug */,
+				79E6EBB9269F4AC9008D0AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E6EBBA269F4AC9008D0AD8 /* Build configuration list for PBXNativeTarget "ViperShoppingCart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E6EBBB269F4AC9008D0AD8 /* Debug */,
+				79E6EBBC269F4AC9008D0AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E6EBBD269F4AC9008D0AD8 /* Build configuration list for PBXNativeTarget "ViperShoppingCartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E6EBBE269F4AC9008D0AD8 /* Debug */,
+				79E6EBBF269F4AC9008D0AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E6EBC0269F4AC9008D0AD8 /* Build configuration list for PBXNativeTarget "ViperShoppingCartUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E6EBC1269F4AC9008D0AD8 /* Debug */,
+				79E6EBC2269F4AC9008D0AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79E6EB88269F4AAF008D0AD8 /* Project object */;
+}
