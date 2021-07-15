@@ -6,4 +6,5 @@ target 'ViperShoppingCart' do
   
   pod 'Alamofire'
   pod 'RealmSwift'
+  pod 'Kingfisher'
 end

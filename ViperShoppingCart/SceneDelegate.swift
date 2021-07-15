@@ -21,6 +21,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navigationController = UINavigationController()
         navigationController.viewControllers = [TabBarController()]
         navigationController.navigationBar.prefersLargeTitles = true
+        navigationController.navigationBar.barTintColor = UIColor(rgb: 0x6200ED)
+        navigationController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navigationController

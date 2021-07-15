@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoviesViewController" customModule="ViperShoppingCart" customModuleProvider="target">
+            <connections>
+                <outlet property="moviesTableView" destination="1rq-8f-whZ" id="u8h-sD-cPr"/>
+                <outlet property="view" destination="iN0-l3-epB" id="2Uv-4t-tcM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1rq-8f-whZ">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="1rq-8f-whZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4YU-03-Ak8"/>
+                <constraint firstItem="1rq-8f-whZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="90X-F8-byQ"/>
+                <constraint firstAttribute="bottom" secondItem="1rq-8f-whZ" secondAttribute="bottom" id="bAH-b6-m18"/>
+                <constraint firstItem="1rq-8f-whZ" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="tyG-p2-2Jq"/>
+            </constraints>
+            <point key="canvasLocation" x="-759.4202898550725" y="-181.47321428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

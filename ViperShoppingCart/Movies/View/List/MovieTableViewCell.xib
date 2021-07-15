@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="y0d-g9-N2C" customClass="MovieTableViewCell" customModule="ViperShoppingCart" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y0d-g9-N2C" id="dEP-Bv-lEU">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uSR-79-Jrt">
+                        <rect key="frame" x="20" y="12" width="90" height="157"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="KQD-D1-5hd"/>
+                            <constraint firstAttribute="width" constant="90" id="n3u-Oj-Vgk"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aB4-Ar-kwF">
+                        <rect key="frame" x="132" y="30" width="262" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRk-5c-m7a">
+                        <rect key="frame" x="237" y="80" width="157" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nRk-5c-m7a" secondAttribute="height" multiplier="157:21" id="qFJ-PD-OXR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popularity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVF-pm-Cm3">
+                        <rect key="frame" x="132" y="79" width="84" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="TVF-pm-Cm3" secondAttribute="height" multiplier="4:1" id="KiU-Os-IKH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nRk-5c-m7a" firstAttribute="trailing" secondItem="dEP-Bv-lEU" secondAttribute="trailingMargin" id="7xg-J9-H4N"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TVF-pm-Cm3" secondAttribute="bottom" constant="69" id="Apr-jK-EuS"/>
+                    <constraint firstItem="TVF-pm-Cm3" firstAttribute="leading" secondItem="uSR-79-Jrt" secondAttribute="trailing" constant="22" id="J8U-7I-ETb"/>
+                    <constraint firstItem="uSR-79-Jrt" firstAttribute="top" secondItem="dEP-Bv-lEU" secondAttribute="top" constant="12" id="PJE-bW-tr4"/>
+                    <constraint firstItem="aB4-Ar-kwF" firstAttribute="top" secondItem="dEP-Bv-lEU" secondAttribute="top" constant="30" id="VZI-Zh-VcW"/>
+                    <constraint firstAttribute="trailing" secondItem="aB4-Ar-kwF" secondAttribute="trailing" constant="20" symbolic="YES" id="WaI-ke-Lfa"/>
+                    <constraint firstItem="uSR-79-Jrt" firstAttribute="leading" secondItem="dEP-Bv-lEU" secondAttribute="leading" constant="20" symbolic="YES" id="Wo5-H2-VXu"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="nRk-5c-m7a" secondAttribute="bottom" constant="68" id="cNX-k4-1Fb"/>
+                    <constraint firstItem="TVF-pm-Cm3" firstAttribute="top" secondItem="aB4-Ar-kwF" secondAttribute="bottom" constant="25" id="eJX-eO-vgx"/>
+                    <constraint firstItem="nRk-5c-m7a" firstAttribute="top" secondItem="aB4-Ar-kwF" secondAttribute="bottom" constant="26" id="oXS-SW-ilS"/>
+                    <constraint firstItem="aB4-Ar-kwF" firstAttribute="leading" secondItem="uSR-79-Jrt" secondAttribute="trailing" constant="22" id="vg2-CN-bWB"/>
+                    <constraint firstAttribute="bottom" secondItem="uSR-79-Jrt" secondAttribute="bottom" constant="11" id="yOb-bE-7JJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="movieImageView" destination="uSR-79-Jrt" id="jIQ-2E-shN"/>
+                <outlet property="moviePopularity" destination="nRk-5c-m7a" id="sU6-d3-UaC"/>
+                <outlet property="movieTitle" destination="aB4-Ar-kwF" id="3RZ-3i-V2v"/>
+            </connections>
+            <point key="canvasLocation" x="-71.014492753623188" y="-335.49107142857139"/>
+        </tableViewCell>
+    </objects>
+</document>
