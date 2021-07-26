@@ -15,7 +15,7 @@
 		793CEFB626A03677000F60A4 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793CEFB526A03677000F60A4 /* UIColorExtension.swift */; };
 		793CEFC526A03BAA000F60A4 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793CEFC426A03BAA000F60A4 /* MovieDetailViewController.swift */; };
 		793CEFCA26A03BFD000F60A4 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793CEFC926A03BFD000F60A4 /* MovieDetailViewController.xib */; };
-		793CEFD526A0477A000F60A4 /* MoviesInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793CEFD426A0477A000F60A4 /* MoviesInteractorDelegate.swift */; };
+		793CEFD526A0477A000F60A4 /* MoviesInteractorToPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793CEFD426A0477A000F60A4 /* MoviesInteractorToPresenterDelegate.swift */; };
 		793CEFDE26A04CF0000F60A4 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793CEFDD26A04CF0000F60A4 /* CartViewController.swift */; };
 		793CEFE926A05BC7000F60A4 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793CEFE826A05BC7000F60A4 /* MovieDetailPresenter.swift */; };
 		793CEFEE26A05C13000F60A4 /* MovieDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793CEFED26A05C13000F60A4 /* MovieDetailRouter.swift */; };
@@ -31,11 +31,14 @@
 		79E6EBB6269F4AC9008D0AD8 /* ViperShoppingCartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EBB5269F4AC9008D0AD8 /* ViperShoppingCartUITests.swift */; };
 		79E6EBD4269FCDBA008D0AD8 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EBD3269FCDBA008D0AD8 /* TabBarController.swift */; };
 		79E6EBDB269FD068008D0AD8 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EBDA269FD068008D0AD8 /* MoviesViewController.swift */; };
-		79E6EBE9269FD132008D0AD8 /* MoviesPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EBE8269FD132008D0AD8 /* MoviesPresenterDelegate.swift */; };
+		79E6EBE9269FD132008D0AD8 /* MoviesPresenterToViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EBE8269FD132008D0AD8 /* MoviesPresenterToViewDelegate.swift */; };
 		79E6EC02269FD834008D0AD8 /* MoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EC01269FD834008D0AD8 /* MoviesInteractor.swift */; };
 		79E6EC07269FD840008D0AD8 /* MoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EC06269FD840008D0AD8 /* MoviesPresenter.swift */; };
 		79E6EC0C269FDE39008D0AD8 /* MovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E6EC0B269FDE39008D0AD8 /* MovieEntity.swift */; };
 		79E719AD26AE1F8E009EE08C /* CartViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E719AC26AE1F8E009EE08C /* CartViewControllerTest.swift */; };
+		79E719E826AF5BCA009EE08C /* MoviesViewToPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E719E726AF5BCA009EE08C /* MoviesViewToPresenterProtocol.swift */; };
+		79E719ED26AF5DF5009EE08C /* MoviesPresenterToInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E719EC26AF5DF5009EE08C /* MoviesPresenterToInteractorProtocol.swift */; };
+		79E719FA26AF7651009EE08C /* MovieDetailViewToPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E719F926AF7651009EE08C /* MovieDetailViewToPresenterProtocol.swift */; };
 		7E239A1E5599B3711341D8FB /* Pods_ViperShoppingCart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597135B65123ACB00EFCA1D9 /* Pods_ViperShoppingCart.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +70,7 @@
 		793CEFB526A03677000F60A4 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		793CEFC426A03BAA000F60A4 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		793CEFC926A03BFD000F60A4 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
-		793CEFD426A0477A000F60A4 /* MoviesInteractorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesInteractorDelegate.swift; sourceTree = "<group>"; };
+		793CEFD426A0477A000F60A4 /* MoviesInteractorToPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesInteractorToPresenterDelegate.swift; sourceTree = "<group>"; };
 		793CEFDD26A04CF0000F60A4 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		793CEFE826A05BC7000F60A4 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
 		793CEFED26A05C13000F60A4 /* MovieDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailRouter.swift; sourceTree = "<group>"; };
@@ -89,11 +92,14 @@
 		79E6EBB7269F4AC9008D0AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79E6EBD3269FCDBA008D0AD8 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		79E6EBDA269FD068008D0AD8 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
-		79E6EBE8269FD132008D0AD8 /* MoviesPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenterDelegate.swift; sourceTree = "<group>"; };
+		79E6EBE8269FD132008D0AD8 /* MoviesPresenterToViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenterToViewDelegate.swift; sourceTree = "<group>"; };
 		79E6EC01269FD834008D0AD8 /* MoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesInteractor.swift; sourceTree = "<group>"; };
 		79E6EC06269FD840008D0AD8 /* MoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenter.swift; sourceTree = "<group>"; };
 		79E6EC0B269FDE39008D0AD8 /* MovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntity.swift; sourceTree = "<group>"; };
 		79E719AC26AE1F8E009EE08C /* CartViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewControllerTest.swift; sourceTree = "<group>"; };
+		79E719E726AF5BCA009EE08C /* MoviesViewToPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewToPresenterProtocol.swift; sourceTree = "<group>"; };
+		79E719EC26AF5DF5009EE08C /* MoviesPresenterToInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenterToInteractorProtocol.swift; sourceTree = "<group>"; };
+		79E719F926AF7651009EE08C /* MovieDetailViewToPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewToPresenterProtocol.swift; sourceTree = "<group>"; };
 		E15FA79F0C5BBAFCF00B65A1 /* Pods-ViperShoppingCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperShoppingCart.debug.xcconfig"; path = "Target Support Files/Pods-ViperShoppingCart/Pods-ViperShoppingCart.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				793CEFFB26A05FD5000F60A4 /* ViperProtocols */,
-				79D6FA2426AB337C00A2D4E1 /* View */,
+				793CEFDD26A04CF0000F60A4 /* CartViewController.swift */,
 				793CEFFC26A05FFA000F60A4 /* CartInteractor.swift */,
 				793CF00126A06009000F60A4 /* CartPresenter.swift */,
 				793CF00626A06023000F60A4 /* CartEntity.swift */,
@@ -157,6 +163,7 @@
 		793CEFE226A05A23000F60A4 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				79E719F826AF7607009EE08C /* ViperProtocols */,
 				79E6EC10269FE098008D0AD8 /* View */,
 				793CEFE826A05BC7000F60A4 /* MovieDetailPresenter.swift */,
 				793CEFED26A05C13000F60A4 /* MovieDetailRouter.swift */,
@@ -236,14 +243,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		79D6FA2426AB337C00A2D4E1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				793CEFDD26A04CF0000F60A4 /* CartViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		79E6EB87269F4AAF008D0AD8 = {
 			isa = PBXGroup;
 			children = (
@@ -311,8 +310,10 @@
 		79E6EBE4269FD0F3008D0AD8 /* ViperProtocols */ = {
 			isa = PBXGroup;
 			children = (
-				793CEFD426A0477A000F60A4 /* MoviesInteractorDelegate.swift */,
-				79E6EBE8269FD132008D0AD8 /* MoviesPresenterDelegate.swift */,
+				79E719E726AF5BCA009EE08C /* MoviesViewToPresenterProtocol.swift */,
+				79E719EC26AF5DF5009EE08C /* MoviesPresenterToInteractorProtocol.swift */,
+				793CEFD426A0477A000F60A4 /* MoviesInteractorToPresenterDelegate.swift */,
+				79E6EBE8269FD132008D0AD8 /* MoviesPresenterToViewDelegate.swift */,
 			);
 			path = ViperProtocols;
 			sourceTree = "<group>";
@@ -332,6 +333,14 @@
 				79E719AC26AE1F8E009EE08C /* CartViewControllerTest.swift */,
 			);
 			path = Cart;
+			sourceTree = "<group>";
+		};
+		79E719F826AF7607009EE08C /* ViperProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				79E719F926AF7651009EE08C /* MovieDetailViewToPresenterProtocol.swift */,
+			);
+			path = ViperProtocols;
 			sourceTree = "<group>";
 		};
 		C55AA479281AA9B53F08A13B /* Pods */ = {
@@ -520,12 +529,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E719ED26AF5DF5009EE08C /* MoviesPresenterToInteractorProtocol.swift in Sources */,
 				79E6EBDB269FD068008D0AD8 /* MoviesViewController.swift in Sources */,
 				793CEFC526A03BAA000F60A4 /* MovieDetailViewController.swift in Sources */,
-				793CEFD526A0477A000F60A4 /* MoviesInteractorDelegate.swift in Sources */,
+				793CEFD526A0477A000F60A4 /* MoviesInteractorToPresenterDelegate.swift in Sources */,
 				793CEFB626A03677000F60A4 /* UIColorExtension.swift in Sources */,
 				793CEFE926A05BC7000F60A4 /* MovieDetailPresenter.swift in Sources */,
+				79E719FA26AF7651009EE08C /* MovieDetailViewToPresenterProtocol.swift in Sources */,
 				79E6EC0C269FDE39008D0AD8 /* MovieEntity.swift in Sources */,
+				79E719E826AF5BCA009EE08C /* MoviesViewToPresenterProtocol.swift in Sources */,
 				79E6EC07269FD840008D0AD8 /* MoviesPresenter.swift in Sources */,
 				793CEFA926A03246000F60A4 /* MoviesRepository.swift in Sources */,
 				793CEFFD26A05FFA000F60A4 /* CartInteractor.swift in Sources */,
@@ -536,7 +548,7 @@
 				793CEFEE26A05C13000F60A4 /* MovieDetailRouter.swift in Sources */,
 				793CEFAE26A03331000F60A4 /* MoviesRouter.swift in Sources */,
 				793CF00726A06023000F60A4 /* CartEntity.swift in Sources */,
-				79E6EBE9269FD132008D0AD8 /* MoviesPresenterDelegate.swift in Sources */,
+				79E6EBE9269FD132008D0AD8 /* MoviesPresenterToViewDelegate.swift in Sources */,
 				79E6EB96269F4AAF008D0AD8 /* SceneDelegate.swift in Sources */,
 				793CEF65269FFAD5000F60A4 /* MovieTableViewCell.swift in Sources */,
 				793CF00226A06009000F60A4 /* CartPresenter.swift in Sources */,

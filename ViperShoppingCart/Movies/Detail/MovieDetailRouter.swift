@@ -9,6 +9,15 @@ import UIKit
 
 class MovieDetailRouter {
     
+    class func createModule() -> UIViewController {
+        
+        let view = MovieDetailViewController()
+        let presenter = MovieDetailPresenter()
+        
+        view.movieDetailPresenter = presenter
+        return view
+    }
+    
     func navigateToCart(movie: MovieEntity) {
         
         guard let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController else { return }
