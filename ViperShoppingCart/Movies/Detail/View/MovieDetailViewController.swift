@@ -41,6 +41,7 @@ class MovieDetailViewController: UIViewController {
     }
     
     @IBAction func addToCart(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
         
         guard let unwrappedMovie = movie else { return }
         movieDetailPresenter?.navigateToCart(movie: unwrappedMovie)

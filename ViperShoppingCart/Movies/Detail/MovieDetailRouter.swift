@@ -13,7 +13,10 @@ class MovieDetailRouter {
         
         guard let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController else { return }
         
-        let cartViewController = CartViewController()
+        let moviesTabBar = navigationController.viewControllers[0] as! TabBarController
+        moviesTabBar.selectedIndex = 1
+        
+        let cartViewController = moviesTabBar.viewControllers?[1] as! CartViewController
         cartViewController.addMovie(movie: movie)
     }
 }
