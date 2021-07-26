@@ -5,7 +5,7 @@
 //  Created by Andrés David Santacoloma Isaza - Ceiba Software on 15/07/21.
 //
 
-class MovieDetailPresenter {
+class MovieDetailPresenter: MovieDetailViewToPresenterProtocol {
     
     private var movieDetailRouter: MovieDetailRouter
     

@@ -11,10 +11,9 @@ class MovieDetailRouter {
     
     class func createModule() -> UIViewController {
         
-        let view = MovieDetailViewController()
         let presenter = MovieDetailPresenter()
-        
-        view.movieDetailPresenter = presenter
+        let view = MovieDetailViewController(movieDetailPresenter: presenter)
+
         return view
     }
     
