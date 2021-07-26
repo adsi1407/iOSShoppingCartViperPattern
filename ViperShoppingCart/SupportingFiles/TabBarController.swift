@@ -15,7 +15,7 @@ class TabBarController: UITabBarController {
         
         navigationItem.title = "Shopping Center"
         
-        let moviesViewController = MoviesViewController()
+        let moviesViewController = MoviesRouter.createModule()
         moviesViewController.tabBarItem.image = UIImage(systemName: "film")
         
         let cartViewController = CartViewController()
