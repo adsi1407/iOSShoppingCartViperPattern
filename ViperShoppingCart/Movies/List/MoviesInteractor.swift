@@ -5,14 +5,10 @@
 //  Created by Andrés David Santacoloma Isaza - Ceiba Software on 14/07/21.
 //
 
-class MoviesInteractor {
+class MoviesInteractor: MoviesPresenterToInteractorProtocol {
     
-    private let delegate: MoviesInteractorDelegate
+    weak var delegate: MoviesInteractorToPresenterDelegate?
     private let errorMessage = "No hay películas"
-    
-    init(delegate: MoviesInteractorDelegate) {
-        self.delegate = delegate
-    }
     
     func fetchMovies() {
         
@@ -20,10 +16,10 @@ class MoviesInteractor {
         let movies = moviesRepository.fetchMovies()
         
         if movies.count > 0 {
-            delegate.showMovies(movies: movies)
+            delegate?.showMovies(movies: movies)
         }
         else {
-            delegate.showError(message: errorMessage)
+            delegate?.showError(message: errorMessage)
         }
     }
 }

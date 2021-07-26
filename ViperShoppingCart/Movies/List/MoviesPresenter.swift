@@ -5,40 +5,35 @@
 //  Created by Andrés David Santacoloma Isaza - Ceiba Software on 14/07/21.
 //
 
-class MoviesPresenter {
+class MoviesPresenter: MoviesViewToPresenterProtocol {
     
-    private var delegate: MoviesPresenterDelegate
-    private var moviesInteractor: MoviesInteractor?
-    private var moviesRouter: MoviesRouter?
+    weak var delegate: MoviesPresenterToViewDelegate?
+    private let moviesInteractor: MoviesPresenterToInteractorProtocol
+    private let moviesRouter: MoviesRouter
     
-    init(delegate: MoviesPresenterDelegate) {
+    init(moviesInteractor: MoviesPresenterToInteractorProtocol) {
         
-        self.delegate = delegate
-        setDelegates()
+        self.moviesInteractor = moviesInteractor
         moviesRouter = MoviesRouter()
     }
     
-    private func setDelegates() {
-        moviesInteractor = MoviesInteractor(delegate: self)
-    }
-    
     func fetchMovies() {
-        moviesInteractor?.fetchMovies()
+        moviesInteractor.fetchMovies()
     }
     
     func navigateToMovieDetails(movie: MovieEntity) {
-        moviesRouter?.navigateToMovieDetails(movie: movie)
+        moviesRouter.navigateToMovieDetails(movie: movie)
     }
 }
 
-extension MoviesPresenter: MoviesInteractorDelegate {
+extension MoviesPresenter: MoviesInteractorToPresenterDelegate {
     
     func showMovies(movies: [MovieEntity]) {
-        delegate.showMovies(movies: movies)
+        delegate?.showMovies(movies: movies)
     }
     
     func showError(message: String) {
-        delegate.showError(message: message)
+        delegate?.showError(message: message)
     }
 }
 
