@@ -16,7 +16,6 @@ class MoviesViewController: UIViewController {
     private var movies: [MovieEntity]?
     
     private var moviesPresenter: MoviesPresenter?
-    private var moviesRouter: MoviesRouter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +27,6 @@ class MoviesViewController: UIViewController {
         
         moviesPresenter = MoviesPresenter(delegate: self)
         moviesPresenter?.fetchMovies()
-        
-        moviesRouter = MoviesRouter()
     }
 }
 

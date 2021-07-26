@@ -5,8 +5,6 @@
 //  Created by Andrés David Santacoloma Isaza - Ceiba Software on 14/07/21.
 //
 
-import Foundation
-
 class MoviesPresenter {
     
     private var delegate: MoviesPresenterDelegate
